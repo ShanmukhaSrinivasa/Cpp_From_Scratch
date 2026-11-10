@@ -5,6 +5,8 @@ My daily journey learning C++ from zero, all the way to building my own game eng
 Each day gets its own folder with a lesson, exercises, my code and my notes.
 The full plan is in **[ROADMAP.md](ROADMAP.md)**.
 
+**On a new computer, or forgot what to type?** Read **[START_HERE.md](START_HERE.md)**.
+
 ## Structure
 ```
 ROADMAP.md        the full plan + progress log

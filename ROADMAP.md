@@ -129,4 +129,4 @@ CPU executes. That's what turns "I can write code" into "I understand code".
 ## Progress log
 | Day | Topic | Done | Notes |
 |---|---|---|---|
-| 001 | What a program is & your first C++ program | ☐ | |
+| 001 | What a program is & your first C++ program | ☑ | Reviewed. To fix in NOTES: Ex 3f, CPU vs compiler, compile time vs run time |
