@@ -17,8 +17,9 @@ This repo is a daily, from-scratch C++ course. Claude writes the lessons and the
   First read `ROADMAP.md` for that day's topic, and the previous day's `NOTES.md` to spot misunderstandings. Briefly address any you find at the start of the new lesson. Use only concepts from earlier days. After writing the lesson, add a row for the day to the progress log in `ROADMAP.md`.
   Every 7th day is a **Build Day**: one small program that combines that week's topics.
 - **"review Day N"**: read the learner's code (`Day_NNN/Ex_*`) and `NOTES.md`. Compile the code if possible. Give feedback like a kind senior engineer: start with what's correct, then bugs, then misunderstandings in the notes, then one or two style tips. Don't rewrite their solutions for them; give hints first.
+- **After a review** (or when asked): write `Day_NNN/ANSWERS.md` as a revision sheet. Start with a 60-second summary, then model answers to the NOTES.md questions, then a correct solution for every exercise, with the real g++ error messages checked by actually compiling. This is the only place where full solutions go.
 
 ## Rules
 - Don't commit or push unless the learner asks.
-- The learner types the code themselves. Never create their `Ex_*` solution files.
+- The learner types the code themselves. Never create their `Ex_*` solution files (full solutions go only in `ANSWERS.md`).
 - Before putting a command or a compiler error message in a lesson, check that it really works or appears with g++.
