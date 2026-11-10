@@ -1,0 +1,21 @@
+# Compiled programs and build outputs
+*.exe
+*.o
+*.obj
+*.out
+*.ii
+*.s
+*.pdb
+*.ilk
+build/
+
+# Editor files (keep the shared build/debug config)
+.vscode/*
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/settings.json
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
