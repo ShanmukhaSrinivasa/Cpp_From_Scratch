@@ -130,3 +130,4 @@ CPU executes. That's what turns "I can write code" into "I understand code".
 | Day | Topic | Done | Notes |
 |---|---|---|---|
 | 001 | What a program is & your first C++ program | ☑ | Reviewed. To fix in NOTES: Ex 3f, CPU vs compiler, compile time vs run time |
+| 002 | Variables: named boxes in memory | ☑ | Reviewed. To fix in NOTES: "name exists in memory" vs compile-time-only, uninitialized-read danger (no error vs silent wrong value), Ex 5 `=` vs `{}` swapped |
