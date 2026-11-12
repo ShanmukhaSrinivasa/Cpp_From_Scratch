@@ -30,11 +30,11 @@
 
 ## Ex 3 — the wraparound health bug
 - My predicted hp values after each hit:
-- my predicted values are 240, 230, 220.
+- my predicted values are 251, 241, 251
 - Actual hp values:
-- 240, 230, 220
+- 251, 241, 231
 - Why this happened, in my own words:
-- char holds upto the value 250 so reducing -10 each time didnt give any issues.
+- char holds upto the value 250 so reducing -10 each time made it overflow and the player got full health
 
 ## Ex 4 — char, int, ASCII
 - My predictions for `'A' + 1` (as char vs. as int):

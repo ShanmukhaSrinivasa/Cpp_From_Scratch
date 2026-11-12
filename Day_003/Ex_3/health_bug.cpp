@@ -2,7 +2,7 @@
 
 int main()
 {
-    unsigned char hp = 250;
+    unsigned char hp = 5;
 
     std::cout << "HP at the start: " << (int)hp << "\n";
 
