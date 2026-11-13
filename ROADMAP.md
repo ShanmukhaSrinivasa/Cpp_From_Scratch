@@ -131,4 +131,5 @@ CPU executes. That's what turns "I can write code" into "I understand code".
 |---|---|---|---|
 | 001 | What a program is & your first C++ program | ☑ | Reviewed. To fix in NOTES: Ex 3f, CPU vs compiler, compile time vs run time |
 | 002 | Variables: named boxes in memory | ☑ | Reviewed. To fix in NOTES: "name exists in memory" vs compile-time-only, uninitialized-read danger (no error vs silent wrong value), Ex 5 `=` vs `{}` swapped |
-| 003 | Data types: bits, bytes, binary, int/float/char/bool | ☑ | Reviewed. To fix in NOTES: place-value vs. binary-digit confusion ("8021"); finish Ex 5 (float comparison + precision(17)); Ex 3 numbers never crossed zero (exercise gap, not a learner error) |
+| 003 | Data types: bits, bytes, binary, int/float/char/bool | ☑ | Reviewed. To fix in NOTES: place-value vs. binary-digit confusion ("8021"); finish Ex 5 (float comparison + precision(17)); Ex 3 numbers never crossed zero (exercise gap, not a learner error) — all fixed |
+| 004 | Input, output & operators (math, precedence, integer division) | ☑ | Reviewed. To fix: Ex 6 declared `int c = 5.0` (double test never ran); Ex 7 missing buggy version; NOTES: "compiler throws" vs run-time crash, `<<` vs `==` is precedence, record Ex 5 error |
