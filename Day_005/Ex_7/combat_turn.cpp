@@ -5,8 +5,7 @@ int main()
     char choice;
     int players_health = 60;
     int enemys_armor;
-    int stamina = 10;   // REVIEW: Still 10! "Too Tired!" works (tested), so set this back to 25.
-                        // With 10, the heavy attack can NEVER deal damage.
+    int stamina = 25;
     int attack_damage = 15;
     int heavy_damage = 30;
     int final_damage;
