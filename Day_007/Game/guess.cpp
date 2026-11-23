@@ -4,15 +4,15 @@
 
 int main()
 {
-    int guess;
+    int guess = 0;
     int tries = 1;
-    int secret;
+    int secret = 0;
     char playAgain;
 
     // Settings
-    int difficulty;
-    int maxNumber;
-    int maxTries;
+    int difficulty = 0;
+    int maxNumber = 0;
+    int maxTries = 0;
 
     // Session Stats
     int gamesPlayed = 0;
@@ -34,7 +34,7 @@ int main()
             std::cout << "Choose: ";
             std::cin >> difficulty;
     
-            if(std::cin.fail())
+            if(std::cin.fail() || difficulty > 3 || difficulty < 1)
             {
                 std::cin.clear();
                 std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
@@ -95,7 +95,10 @@ int main()
 
             if(guess > secret)
             {
-                if(secret - guess <= 5)
+                // FIX: in this branch the GUESS is the bigger number, so the gap is guess - secret.
+                // (secret - guess was always negative here, and every negative number is <= 5,
+                //  so it said "very close" every time. Example: 42 - 90 = -48, and -48 <= 5 is true.)
+                if(guess - secret <= 5)
                 {
                     std::cout << "Too high! (very close!)" << "\n";
                 }
@@ -107,7 +110,7 @@ int main()
             }
             else if(guess < secret)
             {
-                if(guess - secret <= 5)
+                if(secret - guess <= 5)
                 {
                     std::cout << "Too low! (very close!)" << "\n";
                 }
@@ -147,17 +150,19 @@ int main()
 
     }while(playAgain == 'y' || playAgain == 'Y');
 
-    if(bestGuesses == 11)
+    // FIX: games and wins are ALWAYS printed. Only the best score depends on winning,
+    // so only that part goes inside the if. (Before, losing every game printed nothing.)
+    // The old "if(bestGuesses == 11) bestGuesses = 0;" is no longer needed:
+    // when wins is 0, we simply don't print bestGuesses at all.
+    std::cout << "Games: " << gamesPlayed << ", wins: " << wins;
+
+    if(wins > 0)
     {
-        bestGuesses = 0;
+        std::cout << ", best: " << bestGuesses << " guesses";
     }
 
-    std::cout << "Games: " << gamesPlayed << ", wins: " << wins << ", best: " << bestGuesses << " guesses" << "\n";
+    std::cout << "\n";
     std::cout << "Thanks for playing!" << "\n";
-
-    gamesPlayed = 0;
-    wins = 0;
-    bestGuesses = 0;
 
     return 0;
 }

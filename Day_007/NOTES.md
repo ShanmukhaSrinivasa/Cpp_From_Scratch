@@ -11,10 +11,10 @@
 - if we start directly with random number it would be difficult for us to test the game, so it is better to start the game with a fixed number to test the game.
 
 - Which loop does each of these belong in, and why: the random generator, the secret, the guess?
-- 
+- at the beginning we should generate a random number once, then comes the play again loop for that we use a do while loop and inside that create a inner loop forasking and setting difficulty, then a switch to set maxNumber and maxTries and then after that we set the secret number, and then a while loop to count tries and other requirements and then update the stats like win or lose and then ask the user for play again and then we prin the final stats.
 
 - What is a seed? Why does the same seed give the same numbers, and when is that useful?
-- 
+- A seed holds a starting number. The same seed gives the same numbers because the generator is a formula, and the same starting number always produces the same results.. this is useful in games for replaying.
 
 - Why can halving always find a number from 1 to 100 in 7 guesses?
 - there is a approach called as Binary search in c++. so based on that if the number we are searching isn't in that half, we no need to look into that half again because the number will always be in the other half. so this  continue's until we find the number.
